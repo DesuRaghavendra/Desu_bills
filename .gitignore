@@ -1,0 +1,108 @@
+############################
+# Environment variables
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Secrets
+############################
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+
+############################
+# React (frontend)
+############################
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.vite/
+frontend/.next/
+frontend/coverage/
+
+############################
+# Java Spring Boot (backend)
+############################
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.gradle/
+backend/build/
+backend/logs/
+backend/*.log
+
+############################
+# Python OCR Service
+############################
+ocr_service/__pycache__/
+ocr_service/*.py[cod]
+ocr_service/.pytest_cache/
+ocr_service/.mypy_cache/
+ocr_service/.ruff_cache/
+ocr_service/.coverage
+ocr_service/htmlcov/
+ocr_service/.venv/
+ocr_service/venv/
+ocr_service/env/
+ocr_service/.env
+ocr_service/routers/__pycache__/
+ocr_service/utils/__pycache__/
+ocr_service/tests
+
+############################
+# PostgreSQL
+############################
+*.sql~
+*.backup
+*.bak
+*.dump
+
+############################
+# Documents (do not push)
+############################
+docs/
+
+############################
+# IDEs
+############################
+.vscode/
+.idea/
+*.iml
+
+############################
+# OS Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# Temporary files
+############################
+*.tmp
+*.temp
+*.swp
+*.swo
+
+############################
+# Archives
+############################
+*.zip
+*.tar
+*.gz
+*.rar
+
+PROJECT_STATE.md
+
+# Docker override files
+docker-compose.override.yml
